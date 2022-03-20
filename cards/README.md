@@ -1,5 +1,7 @@
 #Initiative Code Challenge
+
 ##Details
+
 * I created this app using 'Create React App'
 * Instructions to run the app are directly below this section, which is the README auto generated with 'Create React App'
 * In order to complete this in 45-50 minutes, I did not do much testing, but there is one test regarding the app rendering if you wish to run it.
