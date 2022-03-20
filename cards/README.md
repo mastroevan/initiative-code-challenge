@@ -1,6 +1,6 @@
-#Initiative Code Challenge
+# Initiative Code Challenge
 
-##Details
+## Details
 
 * I created this app using 'Create React App'
 * Instructions to run the app are directly below this section, which is the README auto generated with 'Create React App'
