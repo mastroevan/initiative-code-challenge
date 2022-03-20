@@ -1,3 +1,16 @@
+#Initiative Code Challenge
+##Details
+* I created this app using 'Create React App'
+* Instructions to run the app are directly below this section, which is the README auto generated with 'Create React App'
+* In order to complete this in 45-50 minutes, I did not do much testing, but there is one test regarding the app rendering if you wish to run it.
+* It is totally responsive. (hs distinct layouts for desktop, tablet, and mobile.)
+* In the instructions it states to return the first five images, but I implemeneted 6 because I thought it was better aesthetically. There is a comment in App.js that instructs on how to change it to 5 cards or as many one would like.
+* I used the same fonts and general layout that were given in the Figma.
+*  In regards to the instruction about a bonus for 'any creativity included', I added a feature where images can be expanded and viewed at their full size by clicking button on top left of image.
+*  In regards to tech, I utilized react-hooks, axios, and MUI to implement the app.
+*  The app overall is quite plain, but I wanted to abide by the time frame of 45-50 min. Hopefully, it is enough to move on to the next step of the interview 😂​
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

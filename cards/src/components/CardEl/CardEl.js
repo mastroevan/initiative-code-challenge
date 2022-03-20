@@ -1,7 +1,11 @@
 import * as React from 'react';
+import {useContext} from 'react';
 import {Card, CardContent, Divider} from '@mui/material';
+import AppContext from '../hooks/appContext';
 
 const CardEl = ({pic, author, url, id}) => {
+  const {setShowModal, setImage} = useContext(AppContext);
+
   //this function gets rid of the rest the url after .com
   const editURL = (s) => {
     let endIdx = 0;
@@ -15,11 +19,24 @@ const CardEl = ({pic, author, url, id}) => {
     return shortURL += arr.slice(0, endIdx).join('');
   }
 
+  //click function to trigger image expansion
+  const handleClick = (e) =>{
+  let currentImage = e.currentTarget.value;
+   setImage(currentImage);
+   setShowModal(true);
+  }
+
   return (
     <>
-    {/* while inline styling is not best practice, I am using it for sake of time. */}
     <Card sx={{width: 325, height: 'auto', margin: 3, padding: 0}}>
       <div className='img-container' style={{position: 'relative', width: 325}}>
+        <button
+          className="expand-btn"
+          fontSize='medium'
+          style={{'&:hover':{color: '#42f55a'}, color: '#a0a1a3', position: 'absolute'}}
+          onClick={handleClick}
+          value={pic}
+        >+</button>
         <img style={{width: 325, height:180}}src={pic} alt="picsum-api" />
       </div>
       <CardContent>
